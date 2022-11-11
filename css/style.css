@@ -1,0 +1,146 @@
+.contenedor{
+    width: 70%;
+    min-height: 400px;
+    margin: 50px auto;
+    display: flex;
+    border: 4px solid rgb(88, 3, 49);
+}
+
+
+.contenedor .Derecha{
+    background:  rgb(199, 24, 146);
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor .Izquierda{
+    background: rgb(206, 86, 160);
+    width: 50%;
+    text-align: center;
+}
+.Derecha h2{
+color: rgb(26, 20, 20);
+}
+
+.Izquierda h2{
+    color: rgb(11, 11, 11);
+}
+
+.Derecha #figura{
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    background: rgb(28, 162, 175);
+    transition: 1s;
+}
+
+.Izquierda button{
+    border: 2px solid   rgb(0, 0, 0);
+    background: rgb(12, 189, 189);
+    color: rgb(15, 14, 15);
+    padding: 8px 24px;
+    font-size: 20px;
+    margin: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.Izquierda button:hover{
+    border-radius: 15px 0 15px 0;
+    background: rgb(14, 152, 143);
+    color: rgb(0, 0, 0);
+}
+
+#figura.Circulo{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 1S;
+    background: rgb(233, 20, 20);
+}
+
+#figura.Rombo{
+border-style: 20%;
+    transform: rotate(315deg);
+    transition: 1s;
+    background: #3b06e7;
+    border: 4px solid #070101;
+    
+}
+
+#figura.Gif{
+    background: url(../img/escandalosos.gif);
+    background-size: cover;
+
+}
+
+#figura.Triangulo{
+    width: 0px;
+        height: 0px;
+        border-right: 100px solid rgb(32, 180, 61);
+        border-top: 100px solid rgb(48, 128, 66);
+        border-left: 100px solid rgb(35, 62, 31);
+        border-bottom: 150px solid #0d0d0d;
+        shape-outside: none;
+        transition: 2s;
+}
+
+#figura.top {
+    transform: translateY(-100px);
+    transition: 1s;
+    background: #cbe008;
+    border: 4px solid #000000;
+}
+
+#figura.Left {
+    transform: translateX(-100px);
+    transition: 1s;
+    background: #270220;
+    border: 4px solid #000000;
+}
+
+#figura.Butom {
+    transform: translateY(100px);
+    transition: 1s;
+    background: #d68a10;
+    border: 4px solid #000000;
+}
+
+#figura.Right {
+    transform: translateX(100px);
+    transition: 1s;
+    background: #8a1414;
+    border: 4px solid #000000;
+}
+#figura.DiagonalIz {
+
+    transform: translate(-100px, -100px);
+    transition: 1s;
+    background: #3f0979;
+    border: 4px solid #000000;
+}
+
+#figura.DiagonalDe {
+    transform: translate(100px, 100px);
+    transition: 1s;
+    background: #080808;
+    border: 4px solid #000000;
+}
+
+#figura.Huevo {
+    width: 126px;
+    height: 180px;
+    background-color: #5cb85c;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+#figura.Semicirculo {
+    width: 50px; 
+    height: 100px; 
+    border: 2px solid #555; 
+    background: #dddfdd;
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+}
